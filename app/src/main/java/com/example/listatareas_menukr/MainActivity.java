@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
             if (id== R.id.Agregar) {
                 añadir();
+                limpiar();
             }
             else if (id == R.id.Edit){
                 editar();
@@ -65,8 +66,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void añadir() {
         String tar = editar.getText().toString().trim();
+        Tareas.add(tar);
 
-        if (!tar.isEmpty()) {
+        /*if (!tar.isEmpty()) {
             int selectedTaskPosition = lista.getCheckedItemPosition();
 
             if (selectedTaskPosition != AdapterView.INVALID_POSITION) {
@@ -76,8 +78,12 @@ public class MainActivity extends AppCompatActivity {
             }
             adapter.notifyDataSetChanged();
             editar.setText("");
-        }
+        }*/
 
+    }
+
+    private void limpiar() {
+        editar.setText("");
     }
 
     private void editar() {
