@@ -10,15 +10,46 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/fondo_petalos"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:text="Lista de tareas"
-            android:textSize="20dp"/>
+            android:textSize="30dp"
+            android:textColor="#D50850"/>
+
+        <Button
+            android:id="@+id/Boton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Opciones"
+            android:backgroundTint="#C925E4"/>
+
+        <EditText
+            android:id="@+id/Edit"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="#ffff"
+            android:hint="Escribe aquí..."
+            android:gravity="start"/>
+
+        <ListView
+            android:id="@+id/List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"/>
+
 
     </LinearLayout>
 
